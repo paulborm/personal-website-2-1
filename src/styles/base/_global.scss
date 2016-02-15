@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+}
+
+body{
+    background-color: #D6D6D6;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: 400;
+    color: #1c222f;
+}
+/*
+a[href^="http://"]:after{
+    font-family: FontAwesome;
+    content: "\f08e";
+    margin-left: 15px;
+    font-size: 1.875rem;
+}*/
+
+.title--medium{
+    font-size: 2.25rem;
+    margin: 0.5rem 0 1.5rem 0
+}
+
+.title--big{
+    font-size: 3.25rem;
+    margin: 1rem 0 3rem 0;
+    
+    @media(max-width: $viewport-sm){
+        font-size: 1.8rem;
+    }
+}
+
+.title--dailyui{
+    font-family: 'Playfair Display', serif;
+}
+
+
+.subtitle{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1c222f;
+    opacity: 0.4;
+}
+
+.inline{
+    display: inline;
+}
+
+.social-links{
+    &--right{
+        margin-left: 0.9375rem;
+    }
+    &--left{
+        margin-right: 0.9375rem;
+    }
+    
+    &__item{
+        @extend .subtitle;
+        margin-right: 0.1rem;
+        
+        @media(max-width: $viewport-xs){
+            margin-right: 0.5rem;
+        }
+        
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+.error-symbol{
+    position: absolute;
+    right: 28rem;
+    font-size: 31rem;
+    color: rgb(232, 232, 232);
+}
+
+.mrgn-t-b{
+    margin: 3.125rem 0;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+
+
+

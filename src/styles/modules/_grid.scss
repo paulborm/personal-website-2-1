@@ -1,0 +1,54 @@
+.grid{   
+    height: 100%;
+    overflow: hidden;
+
+    &__items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: 0 -20px -20px 0;
+    }
+
+    &__item{
+        position: relative;
+        max-height: 20rem;
+        display: flex;
+        flex: 1;
+        flex-basis: 20rem;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 20px;
+        margin-bottom: 20px; 
+        
+        &--text{
+            background-color: #0126ff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            color: white;
+            padding: 0 0 0 2rem;
+        }
+        
+        &--text .title,
+        &--text .subtitle,
+        &--text a{
+            color: white;
+            text-decoration: none;
+        }
+
+        &__link{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        &:hover &__link{
+            background-color: rgba(79,239,173,0.20);
+        }
+    }
+}

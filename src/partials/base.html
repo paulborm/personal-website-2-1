@@ -1,0 +1,66 @@
+{% set siteTitle = "Paul Borm - Webdesigner & Front-End Entwickler | Wendlingen am Neckar" %}
+{% set siteDescription = "Webdesigner & Front-End Entwickler aus Wendlingen am Neckar. Ich gestalte und entwickle moderne Webprojekte." %}
+{% set siteKeywords = "webdesign, front end, wendlingen, website, webentwicklung, mediengestalter, esslingen" %}
+
+<!--
+░░░░░░░░░░░░▄▄▄▄▄▄▄▄▄▄▄▄▄░░░░░░░░░░░░
+░░░░░░▄▄████▀▀▀▀▀░░░░░░▀▀█▄▄░░░░░░░░░
+░░░▄██▀▀░░░░░░░░░░░░░░░░░░▀██▄░░░░░░░
+░░▄█▀░░░░░░░░░░░░░░░░░░░░░░░░▀█▄░░░░░
+░██░░░░░░░░░░░░░░░░░░░░░░░░░░░▀█▄░░░░
+██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▀█▄░░░
+██░░░░░░░░░░░░░░░░░░░░░░░░░▄▄▄░░▀█░░░
+█░░░░░░░░░░░░░░░░░░░░░░░░░░▀██▄░░██░░
+█░░░░░████░░░░░░░░░░░░░░░░░░░░░░░░█▄░
+█░░░░░▀▀▀█░░░░░░░░░░░░░░░░░░░░░░░░██░
+█░░░░░░░░░░░░░░░░░░░░░░░▄▄▄▄█████▀░█▄
+█░░░░░░░░░░▄▄▄▄▄██████▀▀▀▀▀▀░░░░░░░██
+█░░░░▄█████▀▀▀▀▀░▄▄▄████░░░░░░░░░░░██
+██░░░░░░░░░░░░░░░░▀░░░░░░░░░░░░░░░░██
+▀█▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█▀
+░▀█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▄█░
+░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██░
+░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░▄█░░
+░░░░▀██▄░░░░░░░░░░░░░░░░░░░░░░▄▄█▀░░░
+░░░░░░▀██▄░░░░░░░░░░░░░░░░░▄▄█▀░░░░░░
+░░░░░░░░░▀██▄░░░░░░░░░░░▄▄█▀░░░░░░░░░
+░░░░░░░░░░░░▀██▄▄▄▄▄▄▄▄█▀░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░░░
+
+##### STILL UNDER CONSTRUCTION #####
+######### MORE WILL FOLLOW #########
+-->
+
+<!DOCTYPE html>
+<html lang="de-DE">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>{{ title | default(siteTitle) }}</title>
+        <meta name="description" content="{{ description | default(siteDescription) }}">
+        <meta name="keywords" content="{{ description | default(siteKeywords) }}">
+        <meta name="google-site-verification" content="etQ_JIfoEjA0i-_M1CKFu4nETrSlNTZtuH-8m11aVTE" />
+        
+        {% block styles %}{% endblock %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        
+        {% block body %}{% endblock %}
+        
+        {% block scripts %}{% endblock %}
+        <script type="text/javascript" >
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-70158327-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script type="text/javascript" src="scripts/main.min.js"></script>
+    </body>
+</html>

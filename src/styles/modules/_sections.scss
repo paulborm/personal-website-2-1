@@ -1,0 +1,46 @@
+.section{
+    position: relative;
+    background-color: white;
+
+    &--header{
+        height: 100vh;
+        padding: 5.625rem;
+        background-image: url("../images/seilbahn-web.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        //background: #648489;
+        
+        &-404{
+            background-image: url("../images/error-bg.jpg");
+        }
+        
+        @media(max-width: $viewport-sm){
+            background-position-y: -180px; 
+            padding: 1.875rem;
+            padding-bottom: 5.625rem;
+        }
+    }
+    
+    &--portfolio{
+        background-color: #0126FF;
+    }
+    
+    &__inner{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        
+        &--header{
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    
+    &__content{
+        @media(max-width: $viewport-sm){
+            width: 100%;
+        }
+    }
+
+}
