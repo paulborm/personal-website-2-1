@@ -1,7 +1,7 @@
 
 # Created by https://www.gitignore.io/api/windows,node
 
-### Gulp starter kit 2 ###
+### Gulp starter Kit ###
 # Ignore the Destination Folder #
 dist
 
