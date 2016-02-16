@@ -9,11 +9,6 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        //background: #648489;
-        
-        &-404{
-            background-image: url("../images/error-bg.jpg");
-        }
         
         @media(max-width: $viewport-sm){
             background-position-y: -180px; 
