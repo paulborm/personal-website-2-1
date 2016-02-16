@@ -75,7 +75,7 @@ a[href^="http://"]:after{
     
     &__item{
         @extend .subtitle;
-        margin-right: 0.1rem;
+        margin-right: 0.2rem;
         
         @media(max-width: $viewport-xs){
             margin-right: 0.5rem;
