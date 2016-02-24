@@ -65,28 +65,6 @@ a[href^="http://"]:after{
     display: inline;
 }
 
-.social-links{
-    &--right{
-        margin-left: 0.9375rem;
-    }
-    &--left{
-        margin-right: 0.9375rem;
-    }
-    
-    &__item{
-        @extend .subtitle;
-        margin-right: 0.2rem;
-        
-        @media(max-width: $viewport-xs){
-            margin-right: 0.5rem;
-        }
-        
-        &:hover{
-            opacity: 0.8;
-        }
-    }
-}
-
 .error-symbol{
     position: absolute;
     right: 28rem;
