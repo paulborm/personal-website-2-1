@@ -1,11 +1,11 @@
-.social-links{
+.legal-links{
+    @media(max-width: $viewport-xs){
+        margin-left: auto;
+    }
     
     
     &--right{
         margin-left: 0.9375rem;
-    }
-    &--left{
-        margin-right: 0.9375rem;
     }
     
     &__item{

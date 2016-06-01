@@ -1,7 +1,28 @@
 .section{
     position: relative;
     background-color: white;
-
+    overflow: hidden;
+    
+    &__inner{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        
+        &--header{
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    
+    &__content{
+        margin-top: auto;
+        @media(max-width: $viewport-sm){
+            
+            width: 100%;
+        }
+    }
+    
+    
     &--header{
         height: 100vh;
         padding: 5.625rem;
@@ -21,20 +42,23 @@
         background-color: #0126FF;
     }
     
-    &__inner{
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
+    &--datenschutz {
+        //height: 100vh;
+        //background-image: url("../images/seilbahn-web.png");
+        padding: 1.875rem 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         
-        &--header{
-            display: flex;
-            align-items: flex-end;
-        }
-    }
-    
-    &__content{
         @media(max-width: $viewport-sm){
-            width: 100%;
+            background-position-y: -180px; 
+            padding: 1.875rem;
+            padding-bottom: 5.625rem;
+        }
+        
+        .section__content {
+            max-width: 35rem;
+            margin: 0 auto;
         }
     }
 
