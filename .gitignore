@@ -3,7 +3,7 @@
 
 ### Gulp starter Kit ###
 # Ignore the Destination Folder #
-dist
+# dist
 
 ### Windows ###
 # Windows image file caches
