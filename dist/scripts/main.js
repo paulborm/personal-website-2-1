@@ -6,9 +6,4 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 
 $(document).ready(function () {
 
-    $('.nav-toggle').on('click', function () {
-        $(this).toggleClass('nav-toggle--open');
-        $(".nav-fullscreen").toggleClass("nav-fullscreen--open");
-    });
-
 });

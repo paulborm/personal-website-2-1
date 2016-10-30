@@ -407,20 +407,6 @@ a[href^="http://"]:after{
 .inline {
   display: inline; }
 
-.social-links--right {
-  margin-left: 0.9375rem; }
-
-.social-links--left {
-  margin-right: 0.9375rem; }
-
-.social-links__item {
-  margin-right: 0.1rem; }
-  @media (max-width: 480px) {
-    .social-links__item {
-      margin-right: 0.5rem; } }
-  .social-links__item:hover {
-    opacity: 0.8; }
-
 .error-symbol {
   position: absolute;
   right: 28rem;
@@ -432,6 +418,20 @@ a[href^="http://"]:after{
 
 .container {
   margin: 0 auto; }
+
+.social-links--right {
+  margin-left: 0.9375rem; }
+
+.social-links--left {
+  margin-right: 0.9375rem; }
+
+.social-links__item {
+  margin-right: 0.2rem; }
+  @media (max-width: 480px) {
+    .social-links__item {
+      margin-right: 0.5rem; } }
+  .social-links__item:hover {
+    opacity: 0.8; }
 
 .button {
   display: inline-block;
@@ -499,8 +499,6 @@ a[href^="http://"]:after{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
-    .section--header-404 {
-      background-image: url("../images/error-bg.jpg"); }
     @media (max-width: 757px) {
       .section--header {
         background-position-y: -180px;
